@@ -1,0 +1,44 @@
+$colors: (
+	common: (
+		white: #ffffff,
+		black: #000000,
+	),
+	heading: (
+		primary: #0c1e21,
+	),
+	text: (
+		body: #364e52,
+		body-2: #a9b8b8,
+		body-3: #67787a,
+		body-4: #18292c,
+		body-5: #ffffffcc,
+	),
+				theme: (
+								primary: #8d41f9,   // main brand color (violet)
+								bg: #f3e9ff,        // very light lavender (derived from primary)
+								bg-2: #e6d9ff,      // soft lavender
+								bg-3: #00a5f3,      // accent blue background
+
+								dark: #030039,      // deepest navy
+								dark-2: #1a0f5c,    // deep indigo
+								dark-3: #3f2a99,    // muted purple
+								dark-4: #7a63c7,    // soft purple
+								dark-5: #DF48FF,    // vibrant pink highlight
+				),
+
+				red: (
+		1: #ff0000,
+	),
+	grey: (
+		1: #ecf0f0,
+		2: #a9b8b8,
+		3: #ffffff1a,
+	),
+	border: (
+		1: #c9d1d1,
+		2: #313d3d,
+		3: #ffffff26,
+		4: #ffffff33,
+		5: #1e8a8a26,
+	),
+);
