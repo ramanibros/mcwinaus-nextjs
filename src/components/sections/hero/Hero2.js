@@ -1,10 +1,9 @@
 "use client";
 import ButtonPrimary from "@/components/shared/buttons/ButtonPrimary";
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import { Autoplay, EffectFade, Navigation, Thumbs } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import {useState} from "react";
+import {Autoplay, EffectFade, Navigation, Thumbs} from "swiper/modules";
+import {Swiper, SwiperSlide} from "swiper/react";
+
 const Hero2 = () => {
 	const [controlledMainSwiper, setControlledMainSwiper] = useState(null);
 	const heroSlides = [
@@ -15,8 +14,9 @@ const Hero2 = () => {
 					Leading Future for <span>Business.</span>
 				</>
 			),
-			desc: "Committed to delivering innovative solutions that drive success. With a focus on quality.",
-			img: "/images/hero/slider-1.webp",
+			desc: "Shaping tomorrow’s businesses through innovation, strategy, and smart solutions.<br></br>" +
+				"We empower growth by turning ideas into sustainable success.",
+			img: "/images/hero/banner.jpg",
 			thumbImg: "/images/hero/slider-thumb-1.webp",
 		}
 	];
@@ -33,7 +33,7 @@ const Hero2 = () => {
 				thumbs={{ swiper: controlledMainSwiper }}
 				navigation={{ nextEl: ".slider-next", prevEl: ".slider-prev" }}
 				className="hero-slider"
-				style={{ height: "100%" }}
+				style={{ height: "40%" }}
 			>
 				{heroSlides.map(({ img, title, desc }, idx) => (
 					<SwiperSlide
@@ -49,11 +49,17 @@ const Hero2 = () => {
 								}')`,
 							}}
 						></div>
-						<div className="container">
+						<div className="container mt-60">
 							<div className="slider-wrapper">
 								<div className="slider-content">
-									<h1 className="slider-title">{title}</h1>
-									<div className="slider-desc">{desc}</div>
+									<h1 className="slider-title text-anim">{title}</h1>
+									<h2 className="sec-title text-anim text-white">
+										Empowering Business with Expertise.
+									</h2>
+									<div className="slider-desc mt-30">
+										<i>Shaping tomorrow’s businesses through innovation, strategy, and smart solutions. <br></br>
+											We empower growth by turning ideas into sustainable success.</i>
+									</div>
 									<div className="slider-btn">
 										<ButtonPrimary text={"Get Started"} url={"/contact"} />
 									</div>
@@ -63,7 +69,7 @@ const Hero2 = () => {
 					</SwiperSlide>
 				))}
 
-				<div
+				{/*<div
 					className="hero-navigation d-inline-flex wow fadeIn"
 					data-wow-delay="1.5s"
 				>
@@ -79,7 +85,7 @@ const Hero2 = () => {
 							<i className="tji-arrow-right"></i>
 						</span>
 					</div>
-				</div>
+				</div>*/}
 			</Swiper>
 			{/*<Swiper
 				onSwiper={setControlledMainSwiper} // capture thumbs swiper

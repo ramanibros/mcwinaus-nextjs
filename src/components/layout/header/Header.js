@@ -102,7 +102,7 @@ const Header = ({
 											</span>
 											<span className="call-text">1-888-452-1505</span>
 										</Link>
-									) : headerType != 5 ? (
+									) : headerType === 5 ? (
 										""
 									) : (
 										<div className="header-search">
@@ -146,7 +146,7 @@ const Header = ({
 											</button>
 										</div>
 									)}
-									{headerType !== 6 ? (
+									{headerType === 2 ? (
 										<div className="header-button">
 											<ButtonPrimary text={"Let’s Talk"} url={"/contact"} />
 										</div>
