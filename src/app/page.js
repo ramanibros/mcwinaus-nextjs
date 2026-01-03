@@ -26,18 +26,19 @@ import About9 from "@/components/sections/about/About9";
 import Features5 from "@/components/sections/features/Features5";
 import Footer2 from "@/components/layout/footer/Footer2";
 import Footer3 from "@/components/layout/footer/Footer3";
+import Hero2 from "@/components/sections/hero/Hero2";
 
 export default function Home() {
 	return (
 		<div>
 			<BackToTop />
-			<Header headerType={10} />
-			<Header headerType={10} isStickyHeader={true} />
+			<Header headerType={5} />
+			<Header headerType={5} isStickyHeader={true} />
 			<div id="smooth-wrapper">
 				<div id="smooth-content">
 					<main>
 						<div className="top-space-15"></div>
-						<Hero10 />
+						<Hero2 />
 						<About9 />
 						<Features5 />
 						<Process2 />

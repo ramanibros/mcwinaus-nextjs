@@ -13,7 +13,7 @@ const Logo = ({ headerType, isStickyHeader }) => {
 							headerType === 7 ||
 							headerType === 9) &&
 						!isStickyHeader
-							? "/images/logos/mcwinItechLogo.png"
+							? "/images/logos/mcwinItechLogoLight.png"
 							: "/images/logos/mcwinItechLogo.png"
 					}
 					alt=""
