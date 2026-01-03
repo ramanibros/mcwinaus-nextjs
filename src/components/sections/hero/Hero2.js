@@ -11,7 +11,7 @@ const Hero2 = () => {
 			subtitle: "number #1 solver agency",
 			title: (
 				<>
-					Leading Future for <span>Business.</span>
+					Leading Future for <span>Business</span>
 				</>
 			),
 			desc: "Shaping tomorrow’s businesses through innovation, strategy, and smart solutions.<br></br>" +
@@ -53,10 +53,10 @@ const Hero2 = () => {
 							<div className="slider-wrapper">
 								<div className="slider-content">
 									<h1 className="slider-title text-anim">{title}</h1>
-									<h2 className="sec-title text-anim text-white">
+									<h2 className="sec-title text-anim text-white mt-20">
 										Empowering Business with Expertise.
 									</h2>
-									<div className="slider-desc mt-30">
+									<div className="slider-desc mt-40">
 										<i>Shaping tomorrow’s businesses through innovation, strategy, and smart solutions. <br></br>
 											We empower growth by turning ideas into sustainable success.</i>
 									</div>

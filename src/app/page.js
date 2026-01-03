@@ -47,10 +47,10 @@ export default function Home() {
 					<main>
 						<div className="top-space-15"></div>
 						<Hero2 />
+						<About9 />
 						<Features5 />
 						<Process2 />
 						<Brands1 />
-						<About9 />
 						<Funfact1 />
 						<Testimonials1 />
 						<Blogs1 />
