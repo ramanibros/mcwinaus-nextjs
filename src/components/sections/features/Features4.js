@@ -17,11 +17,16 @@ const Features4 = ({ type }) => {
 			desc: "Our team is always available to address your concerns, providing quick and effective solution to keep your business.",
 			icon: "tji-support",
 		},
+		{
+			title: "Dedicated Support",
+			desc: "Our team is always available to address your concerns, providing quick and effective solution to keep your business.",
+			icon: "tji-support",
+		}
 	];
 
 	return (
 		<section id="choose" className="tj-choose-section h6-choose section-gap">
-			<div className="container">
+			<div className="container max-1520">
 				<div className="row">
 					<div className="col-12">
 						<div className="sec-heading style-2 style-6 text-center">
@@ -36,7 +41,7 @@ const Features4 = ({ type }) => {
 				</div>
 				<div className="row row-gap-4 rightSwipeWrap">
 					{features.map((feature, idx) => (
-						<div key={idx} className="col-lg-4">
+						<div key={idx} className="col-lg-3">
 							<FeatureCard feature={feature} idx={idx} type={2} />
 						</div>
 					))}

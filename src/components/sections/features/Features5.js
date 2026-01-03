@@ -3,19 +3,23 @@ import FeatureCard4 from "@/components/shared/cards/FeatureCard4";
 const Features5 = ({ type }) => {
 	const features = [
 		{
-			title: "Innovative Solutions",
-			desc: "We stay ahead of the curve, leveraging cutting-edge technologies and strategies to keep  you competitive in a marketplace.",
+			title: "BRAND",
+			desc: "Web Design, Branding & App Design that elevates your business.",
 			icon: "tji-innovative",
 		},
 		{
-			title: "Award-Winning Expertise",
-			desc: "Recognized by industry leaders, our award-winning team has a proven record of delivering  excellence across projects.",
+			title: "BUILD",
+			desc: "SEO, SMM, SEM & Automation that drive real growth.",
 			icon: "tji-award",
 		},
 		{
-			title: "Dedicated Support",
-			desc: "Our team is always available to address your concerns, providing quick and effective solution to keep your business.",
+			title: "GROW",
+			desc: "Scalable Web, App & eCommerce Development services.",
 			icon: "tji-support",
+		},{
+			title: "SCALE",
+			desc: "PickFlow, your trusted Fleet Management Specialists.",
+			icon: "tji-innovative",
 		},
 	];
 

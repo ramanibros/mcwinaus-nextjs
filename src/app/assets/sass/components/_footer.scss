@@ -7,7 +7,7 @@ START: Theme Footer CSS
 	background-color: var(--tj-color-theme-bg);
 	position: relative;
 	z-index: 1;
-	padding-top: 195px;
+	padding-top: 10px;
 	border-radius: 12px;
 	overflow: hidden;
 	@media #{$xl} {

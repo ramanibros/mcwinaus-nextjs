@@ -15,42 +15,34 @@ import Testimonials1 from "@/components/sections/testimonials/Testimonials1";
 import BackToTop from "@/components/shared/others/BackToTop";
 import HeaderSpace from "@/components/shared/others/HeaderSpace";
 import ClientWrapper from "@/components/shared/wrappers/ClientWrapper";
-import Hero10 from "@/components/sections/hero/Hero10";
-import Hero3 from "@/components/sections/hero/Hero3";
-import Hero5 from "@/components/sections/hero/Hero5";
-import Process4 from "@/components/sections/process/Process4";
-import Process2 from "@/components/sections/process/Process2";
-import Services10 from "@/components/sections/services/Services10";
-import Features4 from "@/components/sections/features/Features4";
-import About9 from "@/components/sections/about/About9";
-import Features5 from "@/components/sections/features/Features5";
-import Footer2 from "@/components/layout/footer/Footer2";
-import Footer3 from "@/components/layout/footer/Footer3";
 
 export default function Home() {
 	return (
 		<div>
 			<BackToTop />
-			<Header headerType={10} />
-			<Header headerType={10} isStickyHeader={true} />
+			<Header />
+			<Header isStickyHeader={true} />
 			<div id="smooth-wrapper">
 				<div id="smooth-content">
 					<main>
-						<div className="top-space-15"></div>
-						<Hero10 />
-						<About9 />
-						<Features5 />
-						<Process2 />
+						<HeaderSpace />
+						<Hero />
+						<Features />
 						<Brands1 />
 						<About1 />
+						<Services1 />
+						<Portfolios1 />
 						<Funfact1 />
 						<Testimonials1 />
+						<Faq2 type={1} />
+						<Contact2 />
 						<Blogs1 />
-						{/*<Contact2 />*/}
+						<Cta />
 					</main>
 					<Footer />
 				</div>
 			</div>
+
 			<ClientWrapper />
 		</div>
 	);

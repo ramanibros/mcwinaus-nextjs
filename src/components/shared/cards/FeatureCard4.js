@@ -3,7 +3,7 @@ import Link from "next/link";
 const FeatureCard4 = ({ feature, type, idx }) => {
 	const { icon, title, desc } = feature ? feature : {};
 	return (
-		<div className="col-lg-4 h7-choose-item">
+		<div className="col-lg-3 h7-choose-item">
 			<div className="choose-box h6-choose-box h7-choose-box">
 				<div className="choose-content">
 					<div className="choose-icon">
