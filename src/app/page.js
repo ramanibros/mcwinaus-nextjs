@@ -27,29 +27,36 @@ import Features5 from "@/components/sections/features/Features5";
 import Footer2 from "@/components/layout/footer/Footer2";
 import Footer3 from "@/components/layout/footer/Footer3";
 import Hero2 from "@/components/sections/hero/Hero2";
+import Footer4 from "@/components/layout/footer/Footer4";
+import Footer5 from "@/components/layout/footer/Footer5";
+import Footer6 from "@/components/layout/footer/Footer6";
+import Footer10 from "@/components/layout/footer/Footer10";
+import Footer7 from "@/components/layout/footer/Footer7";
+import Footer8 from "@/components/layout/footer/Footer8";
+import Footer9 from "@/components/layout/footer/Footer9";
+import FooterMod from "@/components/layout/footer/FooterMod";
 
 export default function Home() {
 	return (
 		<div>
 			<BackToTop />
-			<Header headerType={5} />
-			<Header headerType={5} isStickyHeader={true} />
+			<Header headerType={2} />
+			<Header headerType={2} isStickyHeader={true} />
 			<div id="smooth-wrapper">
 				<div id="smooth-content">
 					<main>
 						<div className="top-space-15"></div>
 						<Hero2 />
-						<About9 />
 						<Features5 />
 						<Process2 />
 						<Brands1 />
-						<About1 />
+						<About9 />
 						<Funfact1 />
 						<Testimonials1 />
 						<Blogs1 />
 						{/*<Contact2 />*/}
 					</main>
-					<Footer />
+					<FooterMod />
 				</div>
 			</div>
 			<ClientWrapper />

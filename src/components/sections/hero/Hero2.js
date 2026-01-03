@@ -18,29 +18,7 @@ const Hero2 = () => {
 			desc: "Committed to delivering innovative solutions that drive success. With a focus on quality.",
 			img: "/images/hero/slider-1.webp",
 			thumbImg: "/images/hero/slider-thumb-1.webp",
-		},
-		{
-			subtitle: "number #1 solver agency",
-			title: (
-				<>
-					Leading Future for <span>Business.</span>
-				</>
-			),
-			desc: "Committed to delivering innovative solutions that drive success. With a focus on quality.",
-			img: "/images/hero/slider-2.webp",
-			thumbImg: "/images/hero/slider-thumb-2.webp",
-		},
-		{
-			subtitle: "number #1 solver agency",
-			title: (
-				<>
-					Leading Future for <span>Business.</span>
-				</>
-			),
-			desc: "Committed to delivering innovative solutions that drive success. With a focus on quality.",
-			img: "/images/hero/slider-3.webp",
-			thumbImg: "/images/hero/slider-thumb-3.webp",
-		},
+		}
 	];
 	return (
 		<section className="tj-slider-section">
@@ -103,7 +81,7 @@ const Hero2 = () => {
 					</div>
 				</div>
 			</Swiper>
-			<Swiper
+			{/*<Swiper
 				onSwiper={setControlledMainSwiper} // capture thumbs swiper
 				slidesPerView={3}
 				spaceBetween={15}
@@ -127,9 +105,9 @@ const Hero2 = () => {
 						</SwiperSlide>
 					)
 				)}
-			</Swiper>
+			</Swiper>*/}
 
-			<div className="circle-text-wrap wow fadeInUp" data-wow-delay="1s">
+			{/*<div className="circle-text-wrap wow fadeInUp" data-wow-delay="1s">
 				<span
 					className="circle-text"
 					style={{ backgroundImage: "url('/images/hero/circle-text.webp')" }}
@@ -137,7 +115,7 @@ const Hero2 = () => {
 				<Link className="circle-icon" href="/services">
 					<i className="tji-arrow-down-big"></i>
 				</Link>
-			</div>
+			</div>*/}
 		</section>
 	);
 };

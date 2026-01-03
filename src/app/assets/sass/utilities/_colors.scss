@@ -1,44 +1,57 @@
-$colors: (
-	common: (
-		white: #ffffff,
-		black: #000000,
-	),
-	heading: (
-		primary: #0c1e21,
-	),
-	text: (
-		body: #364e52,
-		body-2: #a9b8b8,
-		body-3: #67787a,
-		body-4: #18292c,
-		body-5: #ffffffcc,
-	),
-				theme: (
-								primary: #8d41f9,   // main brand color (violet)
-								bg: #f3e9ff,        // very light lavender (derived from primary)
-								bg-2: #e6d9ff,      // soft lavender
-								bg-3: #00a5f3,      // accent blue background
+@use "sass:color";
 
-								dark: #030039,      // deepest navy
-								dark-2: #1a0f5c,    // deep indigo
-								dark-3: #3f2a99,    // muted purple
-								dark-4: #7a63c7,    // soft purple
-								dark-5: #DF48FF,    // vibrant pink highlight
+// Base colors
+$base-primary: #030039;   // deep navy (main brand color)
+$base-pink: #ff00f9;      // vibrant pink (accent)
+$base-blue: #00a4f3;      // bright blue (secondary)
+$base-violet: #8d41f8;    // purple (accent/tertiary)
+
+$colors: (
+				common: (
+								white: #ffffff,
+								black: #000000,
+				),
+
+				heading: (
+								primary: color.adjust($base-primary, $lightness: 3%, $space: hsl),  // slightly lighter primary for headings
+				),
+
+				text: (
+								body:   color.mix($base-primary, $base-blue, 60%),     // dark blue-grey from primary
+								body-2: color.mix($base-blue, #ffffff, 10%),           // light grey
+								body-3: color.mix($base-primary, $base-blue, 50%),     // medium grey-blue
+								body-4: color.adjust($base-primary, $lightness: 6%, $space: hsl),  // strong text
+								body-5: rgba(#ffffff, 0.8),                            // 80% white for dark backgrounds
+				),
+
+				theme: (
+								primary: $base-primary,                                        // #030039 - main brand
+								bg:      color.mix($base-primary, #ffffff, 3%),               // very light tint of primary
+								bg-2:    color.mix($base-primary, #ffffff, 5%),               // slightly stronger tint
+								bg-3:    $base-blue,                                          // #00a4f3 - secondary background
+
+								dark:    $base-primary,                                        // #030039 - base primary
+								dark-2:  color.adjust($base-primary, $lightness: 8%, $space: hsl),   // lighter primary shade
+								dark-3:  color.mix($base-violet, $base-primary, 45%),         // primary + violet mix
+								dark-4:  color.scale($base-violet, $lightness: 10%),          // lighter violet
+								dark-5:  $base-pink,                                           // #ff00f9 - vibrant accent
 				),
 
 				red: (
-		1: #ff0000,
-	),
-	grey: (
-		1: #ecf0f0,
-		2: #a9b8b8,
-		3: #ffffff1a,
-	),
-	border: (
-		1: #c9d1d1,
-		2: #313d3d,
-		3: #ffffff26,
-		4: #ffffff33,
-		5: #1e8a8a26,
-	),
+								1: #ff0000,  // error state
+				),
+
+				grey: (
+								1: color.mix($base-primary, #ffffff, 3%),   // very light grey with primary tint
+								2: color.mix($base-primary, #ffffff, 30%),  // mid grey with primary tint
+								3: rgba(#ffffff, 0.1),                      // 10% white overlay
+				),
+
+				border: (
+								1: color.mix($base-primary, #ffffff, 18%),              // light border
+								2: color.adjust($base-primary, $lightness: 15%, $space: hsl),  // medium border
+								3: rgba(#ffffff, 0.15),                                 // 15% white
+								4: rgba(#ffffff, 0.2),                                  // 20% white
+								5: rgba(color.mix($base-blue, $base-primary, 70%), 0.15),  // tinted border
+				),
 );
