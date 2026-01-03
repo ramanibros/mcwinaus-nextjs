@@ -7,7 +7,7 @@ const FeatureCard4 = ({ feature, type, idx }) => {
 			<div className="choose-box h6-choose-box h7-choose-box">
 				<div className="choose-content">
 					<div className="choose-icon">
-						<i className={icon}></i>
+						<img src={icon} className="wd-24px"/>
 					</div>
 					<h4 className="title">{title}</h4>
 					<p className="desc">{desc}</p>
