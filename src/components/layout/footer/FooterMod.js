@@ -92,6 +92,7 @@ const Footer2 = () => {
 								</ul>
 							</div>
 						</div>
+
 						<div className="col-xl-3 col-md-6">
 							<div
 								className="footer-widget widget-contact wow fadeInUp"
@@ -100,22 +101,33 @@ const Footer2 = () => {
 								<h5 className="title">Our Office</h5>
 								<div className="footer-contact-info">
 									<div className="contact-item">
-										<span>993 Renner Burg, West Rond, MT 94251-030, USA.</span>
+										<span>
+											993 Renner Burg, West Rond, MT 94251-030, USA.
+										</span>
 									</div>
 									<div className="contact-item">
-										<Link href="tel:10095447818">P: +1 (009) 544-7818</Link>
+										<Link href="tel:10095447818">
+											<span>
+													<i className="tji-phone text-white"></i> +1 (009) 544-7818
+											</span>
+										</Link>
+									</div>
+									<div className="contact-item">
 										<Link href="mailto:support@bexon.com">
-											M: support@bexon.com
+											<span>
+													<i className="tji-envelop text-white"></i> support@bexon.com
+											</span>
 										</Link>
 									</div>
 									<div className="contact-item">
 										<span>
-											<i className="tji-clock"></i> Mon-Fri 10am-10pm
+											<i className="tji-clock text-white"></i> Mon-Fri 10am-10pm
 										</span>
 									</div>
 								</div>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
