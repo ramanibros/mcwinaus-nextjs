@@ -28,7 +28,7 @@ const BrandSlider2 = ({ type }) => {
 				? brands?.map(({ img2 = "/images/brands/brand-1-light.webp" }, idx) => (
 						<SwiperSlide key={idx} className="client-item">
 							<div className="client-logo">
-								<img src={img2} alt="Brand" />
+								<img className="w-60" src={img2} alt="Brand" />
 							</div>
 						</SwiperSlide>
 				  ))

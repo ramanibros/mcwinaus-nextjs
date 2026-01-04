@@ -13,6 +13,8 @@ import Testimonials from "@/components/sections/home/Testimonials";
 import Blogs2 from "@/components/sections/blogs/Blogs2";
 import Faq from "@/components/sections/home/Faq";
 import About2 from "@/components/sections/home/About2";
+import Team4 from "@/components/sections/teams/Team4";
+import Technology from "@/components/sections/home/Technology";
 
 export default function Home() {
 	return (
@@ -27,6 +29,7 @@ export default function Home() {
 						<Hero />
 						<About />
 						<Brands />
+						{/*<Technology />*/}
 						<Features />
 						<Process />
 						<Brands2 />
