@@ -5,21 +5,21 @@ const Features5 = ({ type }) => {
 		{
 			title: "BRAND",
 			desc: "Web Design, Branding & App Design that elevates your business.",
-			icon: "/images/service/branding.png",
+			icon: "tji-innovative",
 		},
 		{
 			title: "BUILD",
 			desc: "SEO, SMM, SEM & Automation that drive real growth.",
-			icon: "/images/service/build.png",
+			icon: "tji-award",
 		},
 		{
 			title: "GROW",
 			desc: "Scalable Web, App & eCommerce Development services.",
-			icon: "/images/service/grow.png",
+			icon: "tji-support",
 		},{
 			title: "SCALE",
 			desc: "PickFlow, your trusted Fleet Management Specialists.",
-			icon: "/images/service/scale.png",
+			icon: "tji-innovative",
 		},
 	];
 
